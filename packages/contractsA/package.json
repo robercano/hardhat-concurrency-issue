@@ -1,0 +1,8 @@
+{
+    "name": "contracts_a",
+    "version": "1.0.0",
+    "scripts": {
+        "clean": "npx hardhat clean --global && rm -rf artifacts cache",
+        "compile": "npx hardhat compile"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "hardhat-concurrency-issue",
+    "engines": {
+        "node": ">=16"
+    },
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/**"
+        ]
+    },
+    "scripts": {
+        "clean": "lerna run clean --stream",
+        "compile:success": "lerna run compile --stream --concurrency 1",
+        "compile:error": "lerna run compile --stream"
+    },
+    "devDependencies": {
+        "hardhat": "^2.13.0",
+        "lerna": "^6.6.1",
+        "ts-node": "^10.9.1",
+        "typechain": "^8.1.1"
+    }
+}
